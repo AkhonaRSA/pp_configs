@@ -21,10 +21,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import IVS from "./company/IVS.png";
+import ICEP from "./company/ICEP.png";
+import TUT from "./company/TUT.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -34,6 +33,8 @@ export {
   logo,
   backend,
   creator,
+  ICEP,
+  IVS,
   mobile,
   web,
   github,
@@ -52,10 +53,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  TUT,
   carrent,
   jobit,
   tripguide,
