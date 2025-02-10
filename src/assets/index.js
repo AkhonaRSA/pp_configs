@@ -29,11 +29,18 @@ import carrent from "./carrent.jpg";
 import jobit from "./jobit.jpg";
 import tripguide from "./tripguide.jpg";
 
+import ntsako from "./ntsako.jpg";
+import gillet from "./gillet.jpg";
+import khutso from "./khutso.jpg";
+
 export {
   logo,
   backend,
+  khutso,
   creator,
+  gillet,
   ICEP,
+  ntsako,
   IVS,
   mobile,
   web,

@@ -13,10 +13,13 @@ import {
   nodejs,
   mongodb,
   git,
+  gillet,
+  khutso,
   figma,
   docker,
   carrent,
   jobit,
+  ntsako,
   tripguide,
   threejs,
   TUT,
@@ -154,27 +157,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    "I thought it was impossible to create a banking security system that seamlessly integrates web and mobile platforms, but Akhona made it a reality, it was an honor working with him.",
+    name: "Ntsako ",
+    designation: "Developer",
+    company: "ICEP",
+    image: ntsako,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Akhona's dedication to creating innovative solutions is truly inspiring. He has a unique ability to turn complex ideas into simple, user-friendly applications.",
+    name: "Gillet",
+    designation: "CEO ",
+    company: "Denton Vision Art",
+    image: gillet,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Akhona helped pass in my computer science studies in 2024, thanks to his dedication and not giving up on us, his dedication and support will always be appreciated.",
+    name: "Khutso",
+    designation: "Student",
+    company: "TUT",
+    image: khutso,
   },
 ];
 
