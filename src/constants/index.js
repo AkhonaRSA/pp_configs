@@ -116,42 +116,37 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: TUT,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Frontend Developer",
+    company_name: "Informatics Community Engagement Project",
     icon: ICEP,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    iconBg: "#383E56",
+    date: "June 2024 - Dec 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+     "Developing and maintaining secure banking applications using React.js and React Native to enhance financial security.",
+     "Collaborating with cross-functional teams, including UX designers, backend developers, and security analysts, to create high-quality and reliable financial solutions.",
+     "Implementing responsive and intuitive UI designs, ensuring a seamless experience across web and mobile devices."
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Acting Tutor",
+    company_name: "Tshwane University of Technology",
+    icon: TUT,
+    iconBg: "#E6DEDD",
+    date: "Sept 2024 - Nov 2024",
+    points: [
+     "Assisted students in preparing for their final examinations by conducting night study sessions focused on Software Engineering and Web Development.",
+     "Guided students through practical coding exercises, debugging sessions, and project reviews to strengthen their understanding.",
+    ],
+  },
+  {
+    title: "Fullstack Developer",
+    company_name: "Information Verification System",
     icon: IVS,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2025 ",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed web applications for clients using low-code development with Oracle APEX and PL/SQL to streamline business processes.",
+      "Maintained and enhanced existing systems using JavaScript, ensuring smooth functionality, performance improvements, and bug fixes.",
     ],
   },
 ];
@@ -185,7 +180,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Nexis Bank",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -194,58 +189,58 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "reactnative",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ICEP-DEV/Click.Block.Tech.UI",
   },
   {
-    name: "Job IT",
+    name: "Eggs Monitor",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Automated Egg Contamination and Defect Detection System Using Smart Sensors and cameras to monitor the quality of eggs in real-time.",
     tags: [
       {
-        name: "react",
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "JSP",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://akhonarsa.github.io/EggsMonitor/",
   },
   {
-    name: "Trip Guide",
+    name: "Gender Based Violence",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "noViolence is a transformative social networking platform dedicated to addressing and combating gender-based violence (GBV)",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "JavaScript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Django",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/AkhonaRSA/GenderBased-Violence",
   },
 ];
 

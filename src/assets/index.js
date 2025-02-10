@@ -25,9 +25,9 @@ import IVS from "./company/IVS.png";
 import ICEP from "./company/ICEP.png";
 import TUT from "./company/TUT.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import carrent from "./carrent.jpg";
+import jobit from "./jobit.jpg";
+import tripguide from "./tripguide.jpg";
 
 export {
   logo,
