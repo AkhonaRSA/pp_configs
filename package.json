@@ -1,6 +1,6 @@
 {
   "name": "3dfolio",
-  "homepage": "https://AkhonaRSA.github.io/pp_configs/",
+ // "homepage": "https://AkhonaRSA.github.io/pp_configs/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+  //  "predeploy": "npm run build",
+   // "deploy": "gh-pages -d dist"
 
   },
   "dependencies": {
