@@ -20,6 +20,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
+    
 
     setForm({
       ...form,
@@ -83,7 +84,7 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='text'
               name='name'
@@ -94,7 +95,7 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='email'
               name='email'
