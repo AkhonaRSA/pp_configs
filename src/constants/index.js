@@ -44,22 +44,33 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Software Engineer",
+    icon: creator,
   },
   {
     title: "Fullstack Developer",
-    icon: mobile,
+    icon: web,
   },
   {
     title: "Cloud Engineer",
-    icon: backend,
+    icon: mobile,
   },
   {
     title: "Database Designer",
+    icon: backend,
+  },
+  {
+    title: "AI Automation",
     icon: creator,
   },
-  
+  {
+    title: "Generative AI",
+    icon: creator,
+  },
+  {
+    title: "DevOps Engineer",
+    icon: creator,
+  },
 ];
 
 const technologies = [
