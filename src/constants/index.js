@@ -132,7 +132,7 @@ const experiences = [
   {
     title: "Backend Developer",
     company_name: "Informatics Community Engagement Project",
-    icon: ICEP,
+    
     iconBg: "#383E56",
     date: "June 2024 - Dec 2024",
     points: [
@@ -154,8 +154,9 @@ const experiences = [
   },
   {
     title: "Fullstack Developer",
-    company_name: "Information Verification System",
+    company_name: "ID Verification Systems CC",
     icon: IVS,
+    icon: ICEP,
     iconBg: "#383E56",
     date: "Jan 2025 ",
     points: [
