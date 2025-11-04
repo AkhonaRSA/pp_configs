@@ -148,8 +148,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2025 ",
     points: [
-      "Developed web applications for clients using low-code development with Oracle APEX and PL/SQL to streamline business processes.",
-      "Maintained and enhanced existing systems using JavaScript, ensuring smooth functionality, performance improvements, and bug fixes.",
+      "Worked as fullstack developer designing and developing backend systems for OR-Tambo International Airport cargo companines.",
+      "Maintained and enhanced existing systems using JavaScript, ensuring smooth functionality and User Interfaces, performance improvements, and bug fixes.",
     ],
   },
 ];
