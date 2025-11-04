@@ -86,8 +86,8 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Email</span>
             <input
-              type='text'
-              name='name'
+              type='email'
+              name='email'
               value={form.name}
               onChange={handleChange}
               placeholder="Enter email address?"
@@ -97,8 +97,8 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
-              type='email'
-              name='email'
+              type='text'
+              name='name'
               value={form.email}
               onChange={handleChange}
               placeholder="Enter name?"
