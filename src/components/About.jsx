@@ -47,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        A passionate software developer who loves turning ideas into real-world solutions. 
+        A passionate Software Engineer who loves turning ideas into real-world solutions. 
         Whether it is building seamless user experiences, designing scalable backend systems,
         or experimenting with new technologies,
-        I am always up for a challenge. A lifelong learner at heart, I thrive on innovation,
-        collaboration, and problem-solving
+        I am always up for a challenge. A lifelong learner at heart, I thrive in innovation,
+        collaboration, and problem-solving. 
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
