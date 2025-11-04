@@ -119,14 +119,14 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer",
+    title: "Backend Developer",
     company_name: "Informatics Community Engagement Project",
     icon: ICEP,
     iconBg: "#383E56",
     date: "June 2024 - Dec 2024",
     points: [
-     "Developing and maintaining secure banking applications using React.js and React Native to enhance financial security.",
-     "Collaborating with cross-functional teams, including UX designers, backend developers, and security analysts, to create high-quality and reliable financial solutions.",
+     "Collaborated as a backened developer to builed highly scalable APIs using Express.js for our banking system.",
+     "Collaborating with cross-functional teams, including UX designers, frontend developers, and security analysts, to create high-quality and reliable financial solutions.",
      "Implementing responsive and intuitive UI designs, ensuring a seamless experience across web and mobile devices."
     ],
   },
