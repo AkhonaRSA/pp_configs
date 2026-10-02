@@ -20,10 +20,20 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python.svg";
+import langchain from "./tech/langchain.svg";
+import fastapi from "./tech/fastapi.svg";
+import claude from "./tech/claude.svg";
+import azure from "./tech/azure.svg";
+import aws from "./tech/aws.svg";
 
 import IVS from "./company/IVS.png";
 import ICEP from "./company/ICEP.png";
 import TUT from "./company/TUT.png";
+import linkfields from "./company/linkfields.svg";
+import bcx from "./company/bcx.svg";
+import nedbank from "./company/nedbank.svg";
+import umbrellanet from "./company/umbrellanet.svg";
 
 import carrent from "./carrent.jpg";
 import jobit from "./jobit.jpg";
@@ -42,6 +52,11 @@ export {
   ICEP,
   ntsako,
   IVS,
+  TUT,
+  linkfields,
+  bcx,
+  nedbank,
+  umbrellanet,
   mobile,
   web,
   github,
@@ -60,8 +75,14 @@ export {
   tailwind,
   typescript,
   threejs,
-  TUT,
+  python,
+  langchain,
+  fastapi,
+  claude,
+  azure,
+  aws,
   carrent,
   jobit,
   tripguide,
 };
+

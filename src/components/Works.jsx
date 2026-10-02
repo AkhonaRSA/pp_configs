@@ -17,49 +17,56 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.2, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 25,
           scale: 1,
-          speed: 450,
+          speed: 400,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-black-100 p-5 rounded-2xl sm:w-[360px] w-full border border-white/10 hover:border-white/30 transition-all flex flex-col justify-between h-full shadow-2xl group hover:shadow-[0_0_25px_rgba(255,255,255,0.06)]'
       >
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
+        <div>
+          <div className='relative w-full h-[220px] rounded-xl overflow-hidden bg-black-200'>
+            <img
+              src={image}
+              alt={name}
+              className='w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105'
+            />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-white/20 flex justify-center items-center cursor-pointer hover:scale-110 shadow-lg transition-transform hover:border-white'
+                title='View Source Code'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain filter invert'
+                />
+              </div>
             </div>
+          </div>
+
+          <div className='mt-5'>
+            <h3 className='text-white font-bold text-[20px] tracking-tight group-hover:text-white transition-colors'>
+              {name}
+            </h3>
+            <p className='mt-2.5 text-neutral-400 text-[13px] leading-relaxed'>
+              {description}
+            </p>
           </div>
         </div>
 
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
-
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='mt-5 flex flex-wrap gap-2 pt-3 border-t border-white/10'>
           {tags.map((tag) => (
-            <p
+            <span
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+              className='text-[11px] font-mono px-2 py-0.5 rounded bg-black-200 border border-white/10 text-neutral-300'
             >
               #{tag.name}
-            </p>
+            </span>
           ))}
         </div>
       </Tilt>
@@ -71,24 +78,22 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText}`}>Selected Implementations</p>
+        <h2 className={`${styles.sectionHeadText}`}>
+          Featured Projects<span className='text-neutral-500'>.</span>
+        </h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-neutral-400 text-[15px] sm:text-[16px] max-w-3xl leading-relaxed'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Production-grade enterprise architectures, multi-agent frameworks, and software systems demonstrating expertise in scalable API design, RAG pipelines, and automated data workflows.
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-12 flex flex-wrap gap-6 justify-center sm:justify-start'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -97,4 +102,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
