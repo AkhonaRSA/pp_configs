@@ -17,21 +17,6 @@
   </div>
 </div>
 
----
-
-## 📋 Table of Contents
-
-1. [Executive Summary](#-executive-summary)
-2. [Tech Stack Overview](#-tech-stack-overview)
-3. [Key Architectural Highlights](#-key-architectural-highlights)
-4. [Work Experience](#-work-experience)
-5. [Education & Certifications](#-education--certifications)
-6. [Design Philosophy](#-design-philosophy)
-7. [Quick Start & Setup](#-quick-start--setup)
-8. [Comprehensive Documentation](#-comprehensive-documentation)
-9. [Contact & Reference](#-contact--reference)
-
----
 
 ## 🤖 Executive Summary
 
@@ -75,72 +60,4 @@ Replaced the bulky Web3 computer model that collided with text with an interacti
 
 ---
 
-## 💼 Work Experience
 
-- **Linkfields Innovations** — *AI/ML Graduate* (Jan 2026 – Present)
-  - Designed and developed data-driven backend systems, Python/FastAPI microservices, and vector databases (ChromaDB).
-- **BCX** — *AIOps Consultant Engineer (Deployed at Telkom CCO)*
-  - Automated network port routines and infrastructure workloads via agentic workflows and custom Python scripts.
-- **Nedbank** — *AI Consultant Automation Engineer*
-  - Designed ServiceNow Flow Designer workflows and automated integration points in top-tier regulated banking.
-- **UmbrellaNet** — *AI Automation Developer Intern* (Oct 2025 – Dec 2025)
-  - Designed data retrieval pipelines and integrated core enterprise platforms.
-- **ID Verification Systems CC** — *FullStack Developer Intern* (Jan 2025 – July 2025)
-  - Architected high-performance PL/SQL database procedures and Oracle APEX REST API integrations.
-- **ICEP & Tshwane University of Technology** — *Backend Developer & Acting Tutor* (2024)
-
----
-
-## 🎓 Education & Certifications
-
-- **Diploma in Computer Science** — Tshwane University of Technology (TUT)
-  - *Key Courses:* Web Computing, Advanced Object-Oriented Programming, Internet Programming, Cisco Networking, Information Security, Advanced Discrete Mathematics.
-- **Certifications:**
-  - Microsoft Certified: Azure Fundamentals (AZ-900)
-  - Microsoft Certified: Azure Data Fundamentals (DP-900)
-  - Oracle Cloud Infrastructure 2025 Foundations Associate
-  - AWS Educate: Machine Learning Foundation & Cloud Computing
-  - Udemy: Python Full Stack Development
-- **Awards:**
-  - 2022 CS Top Achiever (TUT Department of Computer Science)
-  - TUT 2024 System of the Semester
-- **Languages:** English, Siswati, Sesotho, isiZulu, Sepedi, isiXhosa
-
----
-
-## 🏃 Quick Start & Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/AkhonaRSA/portfolio.git
-cd pp_configs
-
-# Install dependencies
-npm install
-
-# Start Vite development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production bundle
-npm run preview
-```
-
----
-
-## 📖 Comprehensive Documentation
-
-For the complete technical manual including architecture details, component breakdown, design tokens, and changelogs, consult:
-👉 **[PORTFOLIO_DOCUMENTATION.md](./PORTFOLIO_DOCUMENTATION.md)**
-
----
-
-## 📬 Contact & Reference
-
-- **Email:** [Akhonakhaya@gmail.com](mailto:Akhonakhaya@gmail.com)
-- **Phone:** +27 64 865 8444
-- **LinkedIn:** [linkedin.com/in/akhona-mkhatshwa](https://www.linkedin.com/in/akhona-mkhatshwa)
-- **GitHub:** [github.com/AkhonaRSA](https://github.com/AkhonaRSA)
-- **Professional Reference:** Tebogo Monamodi (+27 65 242 7162)
