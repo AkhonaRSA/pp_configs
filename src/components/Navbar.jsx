@@ -93,7 +93,7 @@ const Navbar = () => {
               href='#contact'
               className='text-xs px-4 py-1.5 rounded-lg bg-white text-black font-bold hover:bg-neutral-200 shadow-sm transition-all'
             >
-              Get in Touch
+              Contact
             </a>
           </div>
         </div>
@@ -103,19 +103,19 @@ const Navbar = () => {
           <button
             onClick={() => setToggle(!toggle)}
             aria-label='Toggle navigation menu'
-            className='p-2 rounded-lg bg-black-100 border border-white/10 text-white focus:outline-none'
+            className='p-2.5 rounded-xl bg-white text-black shadow-md border border-white hover:bg-neutral-200 focus:outline-none flex items-center justify-center transition-all'
           >
             <img
               src={toggle ? close : menu}
               alt='menu'
-              className='w-[20px] h-[20px] object-contain filter invert'
+              className='w-[18px] h-[18px] object-contain filter invert'
             />
           </button>
 
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-black/95 backdrop-blur-2xl border border-white/15 absolute top-16 right-0 mx-4 my-2 min-w-[240px] z-30 rounded-2xl shadow-2xl flex-col gap-4`}
+            } p-6 bg-black/95 backdrop-blur-2xl border border-white/15 absolute top-16 right-0 mx-4 my-2 min-w-[240px] z-30 rounded-2xl shadow-2xl flex-col gap-4 text-white`}
           >
             <ul className='list-none flex flex-col gap-3'>
               {navLinks.map((nav) => (

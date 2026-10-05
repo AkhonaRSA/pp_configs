@@ -15,7 +15,7 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       dpr={[1, 1.5]}
       gl={{ powerPreference: "high-performance", antialias: true }}
       camera={{

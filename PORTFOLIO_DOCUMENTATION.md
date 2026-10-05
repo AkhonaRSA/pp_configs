@@ -52,7 +52,7 @@ AI Specialist with extensive expertise in enterprise AI automation, designing an
 | **ServiceNow Flow Designer** | Enterprise FinTech | Mapped departmental processes, automated cross-platform workflows, and built IntegrationHub spokes. |
 | **n8n** | Automation Workflow | Self-hosted and cloud automated pipelines connecting enterprise webhooks, APIs, and databases. |
 | **Zapier & Power Automate** | Low-Code Integration | Automated operational processes, alert dispatches, and Microsoft 365 enterprise sync. |
-| **Custom Python Automation** | Infrastructure AIOps | Network port routines, telemetry scraping, automated POCs at Telkom CCO & BCX. |
+| **Custom Python Automation** | Infrastructure AIOps | Network port routines, telemetry scraping, automated POCs at BCX. |
 
 ### E. Backend, Languages & Database Management
 | Technology | Category | Implementation Details |
@@ -162,8 +162,8 @@ Updated `src/constants/index.js` and `Experience.jsx` with your full career traj
 1. **Linkfields Innovations** — *AI/ML Graduate (Jan 2026 – Present)*
    - Ingestion, processing, storage, and retrieval workflows for structured/unstructured data.
    - Microservices with Python and FastAPI; vector storage with ChromaDB.
-2. **BCX** — *AIOps Consultant Engineer (Deployed at Telkom CCO)*
-   - Deployed at Telkom under Sales and Tech Architecture teams (CCO).
+2. **BCX** — *AIOps Consultant Engineer*
+   - Partnered with Enterprise Architecture teams at BCX to translate complex business needs into automated system solutions via POCs.
    - Automated infrastructure & network port routines using agentic workflows and custom Python scripts.
 3. **Nedbank** — *AI Consultant Automation Engineer*
    - Mapped departmental processes and designed ServiceNow Flow Designer workflows.

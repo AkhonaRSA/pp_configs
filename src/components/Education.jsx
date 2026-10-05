@@ -13,7 +13,7 @@ import {
 
 const Education = () => {
   return (
-    <div className='flex flex-col gap-12'>
+    <div className='flex flex-col gap-8 sm:gap-12'>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>
           Academic Foundation & Credentials
@@ -23,14 +23,14 @@ const Education = () => {
         </h2>
       </motion.div>
 
-      <div className='grid grid-cols-1 lg:grid-cols-12 gap-8'>
+      <div className='grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8'>
         {/* Left Column: Education & Coursework */}
         <motion.div
-          variants={fadeIn("right", "spring", 0.2, 0.75)}
-          className='lg:col-span-7 flex flex-col gap-6'
+          variants={fadeIn("right", "spring", 0.1, 0.5)}
+          className='lg:col-span-7 flex flex-col gap-4 sm:gap-6'
         >
           {/* Main Degree Card */}
-          <div className='p-6 sm:p-8 rounded-2xl bg-black-100 border border-white/10 shadow-2xl relative overflow-hidden'>
+          <div className='p-5 sm:p-8 rounded-2xl bg-black-100 border border-white/10 shadow-2xl relative overflow-hidden'>
             <div className='flex items-start justify-between flex-wrap gap-2 mb-4'>
               <div>
                 <span className='text-[11px] font-mono font-semibold px-2.5 py-1 rounded-md bg-white/[0.05] text-neutral-300 border border-white/10'>
@@ -72,7 +72,7 @@ const Education = () => {
           {/* Honors & Awards */}
           <div className='p-6 rounded-2xl bg-black-100 border border-white/10'>
             <h4 className='text-white font-bold text-[17px] mb-4 flex items-center gap-2'>
-              <span className='text-amber-400'>★</span> Honors & Academic Distinctions
+              <span className='text-amber-400'>★</span> Academic Achievements
             </h4>
 
             <div className='space-y-3'>

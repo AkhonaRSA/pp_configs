@@ -46,7 +46,7 @@ const ragPipeline = new RAGSystem({
       badgeColor: "text-purple-400 bg-purple-400/10 border-purple-500/30",
       code: `// ServiceNow Flow Designer & Python Automations
 const integrationLayer = new EnterpriseIntegrationHub({
-  corePlatforms: ["Nedbank Banking Core", "Telkom CCO Architecture"],
+  corePlatforms: ["Nedbank Banking Core", "BCX Enterprise Architecture"],
   engine: "ServiceNow Flow Designer + Custom Python",
   security: "Secured Integration Points & Shared Layers",
   certification: ["Azure AZ-900 / DP-900", "OCI 2025", "AWS"]
@@ -55,70 +55,70 @@ const integrationLayer = new EnterpriseIntegrationHub({
   };
 
   return (
-    <section className='relative w-full min-h-screen pt-28 pb-16 flex items-center bg-radial-vignette bg-grid-pattern'>
+    <section className='relative w-full min-h-screen pt-24 sm:pt-28 pb-10 sm:pb-16 flex items-center bg-radial-vignette bg-grid-pattern overflow-hidden'>
       <div className={`max-w-7xl mx-auto ${styles.paddingX} w-full`}>
-        <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center'>
           {/* Left Column: Black & White Typography with Interesting Accents */}
           <div className='lg:col-span-7 flex flex-col items-start'>
             {/* Live Status Pill */}
-            <div className='inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-white text-xs font-medium mb-5 shadow-sm'>
-              <span className='relative flex h-2 w-2'>
+            <div className='inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/5 border border-white/10 text-white text-[11px] sm:text-xs font-medium mb-4 sm:mb-5 shadow-sm max-w-full'>
+              <span className='relative flex h-2 w-2 shrink-0'>
                 <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75' />
                 <span className='relative inline-flex rounded-full h-2 w-2 bg-emerald-500' />
               </span>
-              <span>Available for Enterprise AI & Automation Roles</span>
+              <span className='truncate'>Revolutionizing the way we work with AI.</span>
             </div>
 
             {/* Name & Headline */}
-            <h1 className='text-white text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]'>
+            <h1 className='text-white text-3xl xs:text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]'>
               Akhona <span className='silver-text-gradient'>Mkhatshwa</span>
             </h1>
 
-            <p className='mt-3 text-lg sm:text-xl font-semibold text-white/90'>
+            <p className='mt-2.5 sm:mt-3 text-base sm:text-xl font-semibold text-white/90'>
               AI Specialist & Enterprise Automation Engineer
             </p>
 
-            <p className='mt-4 text-secondary text-sm sm:text-base max-w-xl leading-relaxed'>
-              Extensive expertise in enterprise AI automation, designing and deploying agentic workflows, RAG systems, and multi-agent coordination architectures (MCP, LangChain, Claude APIs). Proven success across top-tier regulated financial environments.
+            <p className='mt-3 sm:mt-4 text-secondary text-xs sm:text-base max-w-xl leading-relaxed'>
+              Extensive expertise in enterprise AI automation, designing and deploying agentic workflows, RAG systems, and multi-agent coordination architectures (MCP, LangChain, Claude APIs). Proven success across regulated FinTech and enterprise environments.
             </p>
 
             {/* Interesting Accent Credential Chips */}
-            <div className='mt-6 flex flex-wrap gap-2.5'>
-              <div className='px-3 py-1.5 rounded-lg bg-black-100 border border-white/10 text-xs font-medium flex items-center gap-2 hover:border-emerald-500/50 transition-colors'>
+            <div className='mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-2.5'>
+              <div className='px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-black-100 border border-white/10 text-[11px] sm:text-xs font-medium flex items-center gap-2 hover:border-emerald-500/50 transition-colors'>
                 <span className='w-1.5 h-1.5 rounded-full bg-emerald-400' />
                 <span className='text-white/90'>Agentic AI & MCP</span>
               </div>
-              <div className='px-3 py-1.5 rounded-lg bg-black-100 border border-white/10 text-xs font-medium flex items-center gap-2 hover:border-cyan-500/50 transition-colors'>
+              <div className='px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-black-100 border border-white/10 text-[11px] sm:text-xs font-medium flex items-center gap-2 hover:border-cyan-500/50 transition-colors'>
                 <span className='w-1.5 h-1.5 rounded-full bg-cyan-400' />
                 <span className='text-white/90'>RAG & Vector Systems</span>
               </div>
-              <div className='px-3 py-1.5 rounded-lg bg-black-100 border border-white/10 text-xs font-medium flex items-center gap-2 hover:border-purple-500/50 transition-colors'>
+              <div className='px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-black-100 border border-white/10 text-[11px] sm:text-xs font-medium flex items-center gap-2 hover:border-purple-500/50 transition-colors'>
                 <span className='w-1.5 h-1.5 rounded-full bg-purple-400' />
                 <span className='text-white/90'>Multi-Cloud (Azure • AWS • OCI)</span>
               </div>
-              <div className='px-3 py-1.5 rounded-lg bg-black-100 border border-white/10 text-xs font-medium flex items-center gap-2 hover:border-amber-500/50 transition-colors'>
+              <div className='px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-black-100 border border-white/10 text-[11px] sm:text-xs font-medium flex items-center gap-2 hover:border-amber-500/50 transition-colors'>
                 <span className='w-1.5 h-1.5 rounded-full bg-amber-400' />
                 <span className='text-white/90'>Regulated FinTech Automation</span>
               </div>
             </div>
 
             {/* CTAs: High-Contrast Black & White with Interesting Hover Highlights */}
-            <div className='mt-8 flex flex-wrap items-center gap-3.5'>
+            <div className='mt-6 sm:mt-8 flex flex-wrap items-center gap-2.5 sm:gap-3.5 w-full sm:w-auto'>
               <a
                 href='#work'
-                className='px-6 py-3 rounded-xl bg-white text-black font-bold text-sm hover:bg-neutral-200 transition-all shadow-[0_0_25px_rgba(255,255,255,0.2)] hover:scale-[1.02]'
+                className='px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl bg-white text-black font-bold text-xs sm:text-sm hover:bg-neutral-200 transition-all shadow-[0_0_25px_rgba(255,255,255,0.2)] text-center'
               >
                 Explore Experience
               </a>
               <a
                 href='#skills'
-                className='px-6 py-3 rounded-xl bg-black-100 text-white font-semibold text-sm border border-white/15 hover:border-white/40 hover:bg-white/5 transition-all'
+                className='px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl bg-black-100 text-white font-semibold text-xs sm:text-sm border border-white/15 hover:border-white/40 hover:bg-white/5 transition-all text-center'
               >
                 Skills & Tech Stack
               </a>
               <a
                 href='#contact'
-                className='px-5 py-3 rounded-xl text-secondary hover:text-white font-semibold text-sm transition-colors flex items-center gap-1.5'
+                className='px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl text-secondary hover:text-white font-semibold text-xs sm:text-sm transition-colors flex items-center gap-1.5'
               >
                 Contact Me <span>→</span>
               </a>
@@ -203,7 +203,7 @@ const integrationLayer = new EnterpriseIntegrationHub({
                   </div>
                   <div className='p-2 rounded-lg bg-white/[0.02] border border-white/5'>
                     <p className='text-[10px] text-neutral-400'>Environments</p>
-                    <p className='text-xs font-bold text-emerald-400 mt-0.5'>Top-Tier Banks</p>
+                    <p className='text-xs font-bold text-emerald-400 mt-0.5'>FinTech</p>
                   </div>
                   <div className='p-2 rounded-lg bg-white/[0.02] border border-white/5'>
                     <p className='text-[10px] text-neutral-400'>Multi-Cloud</p>

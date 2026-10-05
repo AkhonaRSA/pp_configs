@@ -15,19 +15,18 @@ import {
   git,
   figma,
   docker,
-  threejs,
   python,
   langchain,
   fastapi,
   claude,
   azure,
   aws,
+  n8n,
+  gcp,
+  postgresql,
   carrent,
   jobit,
   tripguide,
-  ntsako,
-  gillet,
-  khutso,
   IVS,
   ICEP,
   TUT,
@@ -39,17 +38,23 @@ import {
 
 export const personalInfo = {
   name: "Akhona Mkhatshwa",
-  headline: "AI Specialist & Enterprise Automation Engineer",
-  tagline: "Enterprise AI Automation • Agentic Workflows • Multi-Agent Architectures • Multi-Cloud",
+  headline: "AI Specialist & Solutions Architect",
+  tagline: "Enterprise AI Automation • Software Engineering • Data Engineering • Multi-Cloud",
   summary:
-    "AI Specialist with extensive expertise in enterprise AI automation, designing and deploying agentic workflows, RAG systems, and multiagent coordination architectures (MCP, LangChain, Claude APIs). Proven success designing and building enterprise solutions, LLM solutions and cloud native automations across top tier regulated financial environments. Multi-cloud certified (Azure, AWS, OCI) with deep skills in Data Engineering, AI Automation, and Fullstack development.",
+    "AI Specialist & Solutions Architect with end-to-end engineering expertise across the complete software lifecycle: architecting resilient distributed systems, validating cutting-edge concepts through rapid PoC / R&D prototypes, engineering production-grade microservices & APIs, and deploying scalable multi-cloud solutions with CI/CD automation. Proven track record architecting agentic workflows, autonomous multi-agent systems (MCP, LangChain, Claude APIs), and enterprise ServiceNow automations in regulated FinTech and enterprise environments. Multi-cloud certified (Azure, AWS, OCI) with deep mastery across Data Engineering, high-performance APIs, and Fullstack systems.",
   email: "Akhonakhaya@gmail.com",
-  phone: "0648658444",
+  phone: "+27648658444",
   phoneDisplay: "064 865 8444",
+  phoneInternational: "+27 64 865 8444",
+  whatsapp: "https://wa.me/27648658444",
   location: "South Africa",
+  locationDetailed: "South Africa (GMT+2)",
+  status: "Revolutionizing the way we work with AI.",
   reference: {
     name: "Tebogo Monamodi",
-    phone: "065 242 7162",
+    phone: "+27652427162",
+    phoneDisplay: "065 242 7162",
+    phoneInternational: "+27 65 242 7162",
     relation: "Professional Reference",
   },
   linkedin: "https://www.linkedin.com/in/akhona-mkhatshwa",
@@ -74,10 +79,6 @@ export const navLinks = [
     title: "Education & Certs",
   },
   {
-    id: "projects",
-    title: "Projects",
-  },
-  {
     id: "contact",
     title: "Contact",
   },
@@ -85,34 +86,110 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Enterprise AI & Multi-Agent",
-    description: "Designing agentic workflows, MCP architectures, LangChain, Claude APIs & LLM governance.",
+    pillarId: "01",
+    badge: "AGENTIC AI & AUTOMATION",
+    title: "AI & Intelligent Automation",
+    subtitle: "Agentic Workflows • Multi-Agent (MCP) • Process Automation • LLM Governance",
+    description:
+      "Architecting autonomous agent workflows, multi-agent swarms (MCP, LangChain, Claude APIs), and enterprise process automation (ServiceNow Flow Designer, custom Python scripts, n8n). Engineered with deterministic state governance, prompt security, and automated tool execution.",
+    highlights: [
+      "Autonomous agent swarms & Model Context Protocol (MCP) integrations",
+      "Enterprise workflow automation & process orchestration (ServiceNow, Python)",
+      "Production RAG knowledge engines, semantic search & regulated FinTech guardrails",
+    ],
+    tags: ["AgenticAI", "Automation", "MCP", "LangChain", "ServiceNow", "PythonAutomation"],
     icon: creator,
+    accent: {
+      border: "hover:border-emerald-400/40",
+      glow: "bg-emerald-400",
+      tag: "text-emerald-400",
+      badgeBg: "bg-emerald-400/10 text-emerald-400 border-emerald-500/30",
+    },
   },
   {
-    title: "RAG Systems & Vector DBs",
-    description: "Building production RAG pipelines, contextual embeddings, semantic search & ChromaDB.",
-    icon: backend,
-  },
-  {
-    title: "Workflow & Cloud Automation",
-    description: "Enterprise ServiceNow Flow Designer, n8n, Zapier, Power Automate & custom Python automation.",
-    icon: mobile,
-  },
-  {
-    title: "Fullstack & High-Scale APIs",
-    description: "Developing robust backend microservices with FastAPI, Python, React.js & modern databases.",
+    pillarId: "02",
+    badge: "SYSTEM ARCHITECTURE & DEV",
+    title: "Software Engineering & Architecture",
+    subtitle: "System Design • PoC & R&D Prototyping • Fullstack APIs • CI/CD Deployment",
+    description:
+      "End-to-end software engineering spanning the full product lifecycle: architecting scalable distributed systems, developing rapid Proof of Concepts (PoC/R&D), building robust microservices and high-scale RESTful APIs (FastAPI, Python, React.js), and automated production deployments.",
+    highlights: [
+      "System architecture design, microservices modeling & API contract specifications",
+      "Rapid PoC and R&D prototyping translating business requirements into working software",
+      "Production API development (FastAPI/Node.js) & automated cloud CI/CD deployments",
+    ],
+    tags: ["SystemDesign", "PoC_RnD", "SoftwareEngineering", "FastAPI", "Microservices", "CloudDeploy"],
     icon: web,
+    accent: {
+      border: "hover:border-cyan-400/40",
+      glow: "bg-cyan-400",
+      tag: "text-cyan-400",
+      badgeBg: "bg-cyan-400/10 text-cyan-400 border-cyan-500/30",
+    },
   },
   {
-    title: "Multi-Cloud & Data Engineering",
-    description: "Certified Azure (AZ-900, DP-900), AWS & OCI architectures with scalable data pipelines.",
-    icon: mobile,
+    pillarId: "03",
+    badge: "DATA PIPELINES & CLOUD",
+    title: "Data Engineering & Cloud Infrastructure",
+    subtitle: "ETL / ELT Pipelines • Vector Databases • Multi-Cloud (Azure, AWS, OCI)",
+    description:
+      "Architecting resilient data infrastructure, high-throughput ingestion pipelines, and multi-tenant data storage. Unifying relational databases (PostgreSQL, MySQL, PL/SQL) with high-dimensional vector stores (ChromaDB) across certified Microsoft Azure, AWS, and Oracle Cloud environments.",
+    highlights: [
+      "End-to-end ETL/ELT pipelines for structured transactional and unstructured document data",
+      "High-performance vector database architectures (ChromaDB) paired with SQL systems",
+      "Multi-cloud certified infrastructure (Microsoft Azure AZ-900 & DP-900, AWS, OCI 2025)",
+    ],
+    tags: ["DataEngineering", "VectorDB", "ChromaDB", "AzureDP900", "MultiCloud", "ETL"],
+    icon: backend,
+    accent: {
+      border: "hover:border-purple-400/40",
+      glow: "bg-purple-400",
+      tag: "text-purple-400",
+      badgeBg: "bg-purple-400/10 text-purple-400 border-purple-500/30",
+    },
+  },
+];
+
+const engineeringLifecycle = [
+  {
+    step: "01",
+    phase: "Design a System",
+    title: "System Architecture & Modeling",
+    summary:
+      "Translating complex business requirements into scalable, fault-tolerant system blueprints. Defining domain boundaries, distributed microservices, API contracts, security postures, and database schemas.",
+    skills: ["Distributed Systems", "Domain-Driven Design", "API Specs (OpenAPI)", "Database Architecture"],
+    badgeColor: "text-purple-400 bg-purple-400/10 border-purple-500/30",
+    glow: "bg-purple-400",
   },
   {
-    title: "AIOps & Infrastructure Routines",
-    description: "Automated network port routines, Proof of Concepts & high-availability system stability.",
-    icon: creator,
+    step: "02",
+    phase: "Implement PoC / R&D",
+    title: "Rapid Prototyping & R&D Validation",
+    summary:
+      "De-risking architecture and accelerating time-to-value through agile Proof of Concepts. Benchmarking cutting-edge AI models, agentic frameworks, and integration feasibility before production scale.",
+    skills: ["Proof of Concept (PoC)", "R&D Exploration", "Agentic Feasibility", "Benchmarking"],
+    badgeColor: "text-amber-400 bg-amber-400/10 border-amber-500/30",
+    glow: "bg-amber-400",
+  },
+  {
+    step: "03",
+    phase: "Develop Fullstack",
+    title: "Production Engineering & APIs",
+    summary:
+      "Crafting production-grade, maintainable codebases with clean architecture principles. Developing high-concurrency backend microservices (FastAPI, Python, Node.js), robust data pipelines, and responsive frontends.",
+    skills: ["FastAPI / Python", "Modern React.js", "PL/SQL & Vector DBs", "Clean Code & Testing"],
+    badgeColor: "text-cyan-400 bg-cyan-400/10 border-cyan-500/30",
+    glow: "bg-cyan-400",
+  },
+  {
+    step: "04",
+    phase: "Deploy & Scale",
+    title: "Cloud Deployment & Observability",
+    summary:
+      "Containerizing workloads with Docker, establishing automated CI/CD deployment pipelines, and operating across certified multi-cloud infrastructure (Azure, AWS, OCI) with proactive AIOps monitoring.",
+    skills: ["Docker Containers", "Automated CI/CD", "Multi-Cloud (Azure/AWS/OCI)", "AIOps & Telemetry"],
+    badgeColor: "text-emerald-400 bg-emerald-400/10 border-emerald-500/30",
+    glow: "bg-emerald-400",
   },
 ];
 
@@ -162,8 +239,16 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "n8n",
+    icon: n8n,
+  },
+  {
+    name: "Google Cloud",
+    icon: gcp,
+  },
+  {
+    name: "PostgreSQL Database",
+    icon: postgresql,
   },
   {
     name: "git",
@@ -217,25 +302,24 @@ const experiences = [
     icon: linkfields,
     iconBg: "#18122B",
     date: "Jan 2026 - Present",
+    roleCategory: "AI & Data Engineering",
+    technologies: ["Python", "FastAPI", "ChromaDB", "React.js", "AI Pipelines"],
     points: [
-      "Designed and developed data-driven backend systems and AI applications requiring reliable database and data processing infrastructure.",
-      "Engineered end-to-end data workflows for structured and unstructured data across ingestion, transformation, storage, and semantic retrieval.",
-      "Developed backend services using Python and FastAPI, integrating application services with relational databases, React.js frontends, and external APIs.",
-      "Architected data storage and retrieval systems leveraging SQL databases alongside high-performance vector databases (ChromaDB) for AI retrieval.",
-      "Troubleshot application, integration, and data-related issues and investigated root causes across complex enterprise technology stacks.",
-      "Developed automated workflows and integrations that process business data and seamlessly interconnect multiple enterprise systems.",
+      "Architecting data-driven backend services and AI pipelines using Python and FastAPI, pairing SQL with high-performance ChromaDB vector stores.",
+      "Developing automated end-to-end data workflows for ingestion, transformation, storage, and sub-second semantic retrieval.",
     ],
   },
   {
     title: "AIOps Consultant Engineer",
-    company_name: "BCX (Deployed at Telkom CCO)",
+    company_name: "BCX",
     icon: bcx,
     iconBg: "#0A192F",
-    date: "Late 2025",
+    date: "",
+    roleCategory: "Architecture & AIOps",
+    technologies: ["AIOps", "Python Automation", "PoC & R&D", "Infrastructure"],
     points: [
-      "Deployed at Telkom under Sales and Tech Architecture teams (CCO) to translate complex business needs into automated system solutions by developing high-impact Proof of Concepts (POC).",
-      "Automated critical infrastructure and network port routines using agentic workflows and custom Python automation scripts.",
-      "Enhanced platform stability, eliminated manual operational bottlenecks, and drove measurable cost efficiency across enterprise telecom infrastructure.",
+      "Partnered with Enterprise Architecture teams at BCX to translate complex business needs into automated system solutions by developing high-impact Proof of Concepts (POC).",
+      "Automated critical infrastructure and network port routines using agentic workflows and custom Python automation scripts, optimizing operational stability.",
     ],
   },
   {
@@ -243,11 +327,12 @@ const experiences = [
     company_name: "Nedbank",
     icon: nedbank,
     iconBg: "#003816",
-    date: "2025",
+    date: "",
+    roleCategory: "Enterprise Automation",
+    technologies: ["ServiceNow", "Flow Designer", "IntegrationHub", "FinTech Security"],
     points: [
-      "Mapped intricate departmental processes and designed automated Flow Designer workflows and custom data retrieval pipelines within ServiceNow.",
-      "Built secured integration points between core banking platforms using orchestration engines and central enterprise knowledge bases using shared integration layers.",
-      "Delivered robust, compliant automation solutions adhering to the rigorous security standards of top-tier regulated financial environments.",
+      "Designed automated Flow Designer workflows and custom data retrieval pipelines within ServiceNow for core banking operations.",
+      "Engineered secure integration points between banking platforms and centralized knowledge bases adhering to strict FinTech compliance standards.",
     ],
   },
   {
@@ -256,10 +341,11 @@ const experiences = [
     icon: umbrellanet,
     iconBg: "#0F172A",
     date: "Oct 2025 - Dec 2025",
+    roleCategory: "Enterprise Automation",
+    technologies: ["ServiceNow", "Workflow Automation", "Process Mapping", "Python"],
     points: [
-      "Mapped departmental business processes and designed automated Flow Designer workflows and custom data retrieval pipelines in ServiceNow.",
-      "Built secured integration points between core platforms using orchestration engines and centralized knowledge bases through shared integration layers.",
-      "Collaborated with cross-functional engineering teams to automate legacy routines and optimize data delivery.",
+      "Mapped departmental business processes and built automated ServiceNow Flow Designer workflows and custom data pipelines.",
+      "Collaborated with engineering teams to automate legacy routines and optimize cross-platform data delivery.",
     ],
   },
   {
@@ -268,11 +354,11 @@ const experiences = [
     icon: IVS,
     iconBg: "#111827",
     date: "Jan 2025 - July 2025",
+    roleCategory: "Fullstack & Database",
+    technologies: ["PL/SQL", "Oracle APEX", "REST APIs", "Modern UI"],
     points: [
-      "Designed and implemented complex database architectures using PL/SQL, creating high-performance triggers, stored procedures, and functions to optimize data processing.",
-      "Seamlessly integrated backend database systems with low-code data platforms like Oracle APEX by developing and consuming robust REST APIs.",
-      "Re-engineered and built modern frontend interfaces for legacy systems, significantly improving usability and system workflow.",
-      "Continuously partnered with corporate clients to evaluate designs, gather requirements, and implement critical system changes tailored to operational needs.",
+      "Designed and optimized PL/SQL database architectures (triggers, stored procedures, functions) integrated with Oracle APEX via REST APIs.",
+      "Re-engineered legacy user interfaces into modern, responsive frontends tailored to operational enterprise client requirements.",
     ],
   },
   {
@@ -281,22 +367,24 @@ const experiences = [
     icon: TUT,
     iconBg: "#2B1A2F",
     date: "June 2024 - Dec 2024",
+    roleCategory: "Backend & Mentorship",
+    technologies: ["Express.js", "Scalable APIs", "Node.js", "Mentorship"],
     points: [
-      "Collaborated as a backend developer to build highly scalable APIs using Express.js and databases for community banking and verification systems.",
-      "Mentored and tutored students in Software Engineering and Web Development, leading practical coding, debugging sessions, and technical project reviews.",
+      "Built scalable backend APIs using Express.js and relational databases for community banking and verification systems.",
+      "Mentored students in Software Engineering principles, practical coding, debugging sessions, and technical project reviews.",
     ],
   },
 ];
 
 const education = {
-  degree: "Diploma in Computer Science",
+  degree: "Computer Science",
   institution: "Tshwane University of Technology (TUT)",
   keyCourses: [
-    "Web Computing (JavaScript, HTML5, CSS3)",
     "Advanced Object-Oriented Programming (Java, Kotlin, Data Structures, DB Management)",
     "Internet Programming (Java, JavaScript, Java EE, Session Management)",
-    "Cisco Networking Foundation & Microsoft 365",
-    "Advanced Discrete Mathematics",
+    "Advanced Discrete Mathematics & Numerical Computing",
+    "Software Engineering Projects & Systems Architecture",
+    "Web Computing (JavaScript, HTML5, CSS3)",
     "Information Security & Cryptography",
   ],
 };
@@ -362,32 +450,7 @@ const spokenLanguages = [
   { name: "isiXhosa", level: "Fluent" },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "Akhona's expertise in AI orchestration, backend reliability, and system integration made our banking platforms seamlessly integrate across web and mobile platforms. Outstanding engineer!",
-    name: "Ntsako",
-    designation: "Developer",
-    company: "ICEP",
-    image: ntsako,
-  },
-  {
-    testimonial:
-      "Akhona's dedication to creating innovative AI and automation solutions is truly inspiring. He turns complex enterprise workflows into simple, intuitive, and high-performance applications.",
-    name: "Gillet",
-    designation: "CEO",
-    company: "Denton Vision Art",
-    image: gillet,
-  },
-  {
-    testimonial:
-      "Akhona's guidance in Computer Science, software architecture, and system design was invaluable. His technical mastery and commitment to mentorship made all the difference.",
-    name: "Khutso",
-    designation: "Colleague",
-    company: "TUT",
-    image: khutso,
-  },
-];
+const testimonials = [];
 
 const projects = [
   {
@@ -461,6 +524,7 @@ const projects = [
 
 export {
   services,
+  engineeringLifecycle,
   technologies,
   skillsCategories,
   experiences,

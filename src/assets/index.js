@@ -26,6 +26,9 @@ import fastapi from "./tech/fastapi.svg";
 import claude from "./tech/claude.svg";
 import azure from "./tech/azure.svg";
 import aws from "./tech/aws.svg";
+import n8n from "./tech/n8n.svg";
+import gcp from "./tech/gcp.svg";
+import postgresql from "./tech/postgresql.svg";
 
 import IVS from "./company/IVS.png";
 import ICEP from "./company/ICEP.png";
@@ -39,18 +42,11 @@ import carrent from "./carrent.jpg";
 import jobit from "./jobit.jpg";
 import tripguide from "./tripguide.jpg";
 
-import ntsako from "./ntsako.jpg";
-import gillet from "./gillet.jpg";
-import khutso from "./khutso.jpg";
-
 export {
   logo,
   backend,
-  khutso,
   creator,
-  gillet,
   ICEP,
-  ntsako,
   IVS,
   TUT,
   linkfields,
@@ -81,6 +77,9 @@ export {
   claude,
   azure,
   aws,
+  n8n,
+  gcp,
+  postgresql,
   carrent,
   jobit,
   tripguide,

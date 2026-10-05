@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import { BallCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies, skillsCategories } from "../constants";
 import { styles } from "../styles";
@@ -19,7 +19,9 @@ const techDescriptions = {
   "Node JS": "Event-driven asynchronous backend services and integration hubs.",
   Docker: "Microservices containerization, isolation, and reproducible deployments.",
   "Tailwind CSS": "Utility-first design architecture powering modern, luxury dark interfaces.",
-  "Three JS": "Hardware-accelerated 3D WebGL graphics and interactive scene rendering.",
+  n8n: "Automated workflow pipelines orchestrating enterprise webhooks, APIs, and AI nodes.",
+  "Google Cloud": "Cloud compute, big data pipelines, enterprise storage, and distributed services.",
+  "PostgreSQL Database": "ACID-compliant relational database management, schema design, and high-concurrency indexing.",
   git: "Distributed version control, CI/CD pipeline automation, and team collaboration.",
 };
 
@@ -27,7 +29,7 @@ const Tech = () => {
   const [activeTech, setActiveTech] = useState(technologies[0]);
 
   return (
-    <div className='flex flex-col gap-14'>
+    <div className='flex flex-col gap-8 sm:gap-14'>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>
           Technical Competencies & Stack
@@ -38,12 +40,12 @@ const Tech = () => {
       </motion.div>
 
       {/* Categorized Skills Grid in Black & White Theme */}
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-6'>
         {skillsCategories.map((group, index) => (
           <motion.div
             key={group.category}
-            variants={fadeIn("up", "spring", index * 0.1, 0.75)}
-            className='bg-black-100 border border-white/10 hover:border-white/30 p-6 rounded-2xl flex flex-col justify-between shadow-xl transition-all hover:scale-[1.01]'
+            variants={fadeIn("up", "spring", Math.min(index * 0.05, 0.2), 0.5)}
+            className='bg-black-100 border border-white/10 hover:border-white/30 p-4 sm:p-6 rounded-2xl flex flex-col justify-between shadow-xl transition-all'
           >
             <div>
               <div className='flex justify-between items-center mb-3'>
@@ -72,48 +74,68 @@ const Tech = () => {
         ))}
       </div>
 
-      {/* High-Performance Unified 3D Tech Sphere Showcase (1 WebGL Context) */}
+      {/* Interactive 3D Spinning Earth & Selected Technology Showcase */}
       <div className='pt-8 border-t border-white/10'>
         <div className='text-center mb-8'>
           <h4 className='text-white font-bold text-lg tracking-tight'>
-            Interactive 3D Technology Sphere
+            Tech Stack
           </h4>
           <p className='text-neutral-400 text-xs mt-1'>
-            Click any technology below to project it onto the interactive 3D physics sphere
+            Explore deployed enterprise technologies alongside the spinning 3D globe. Select any technology to inspect its role.
           </p>
         </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-black-100/60 border border-white/10 p-6 sm:p-8 rounded-3xl'>
-          {/* Active 3D WebGL Sphere Canvas */}
-          <div className='lg:col-span-5 flex flex-col items-center justify-center'>
-            <div className='w-56 h-56 sm:w-64 sm:h-64 cursor-grab active:cursor-grabbing relative'>
-              <BallCanvas key={activeTech.name} icon={activeTech.icon} />
+        <div className='grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center bg-black-100/60 border border-white/10 p-4 sm:p-8 rounded-2xl sm:rounded-3xl'>
+          {/* Active 3D Spinning Earth Canvas & Selected Tech Info */}
+          <div className='lg:col-span-5 flex flex-col items-center justify-center w-full'>
+            <div className='w-full h-[260px] sm:h-[350px] cursor-grab active:cursor-grabbing relative touch-pan-y'>
+              <EarthCanvas />
             </div>
 
-            <div className='text-center mt-2'>
-              <h5 className='text-white font-bold text-base tracking-tight'>
-                {activeTech.name}
-              </h5>
-              <p className='text-xs text-neutral-400 max-w-xs mt-1 leading-relaxed'>
-                {techDescriptions[activeTech.name] || "Enterprise core technology stack."}
-              </p>
+            {/* Selected Technology Info Box */}
+            <div className='w-full mt-2 p-4 rounded-2xl bg-black-200/90 border border-white/10 flex items-center gap-4 transition-all shadow-lg'>
+              <div className='w-12 h-12 rounded-xl bg-white/[0.06] border border-white/15 flex items-center justify-center p-2.5 shrink-0 shadow-sm'>
+                <img
+                  src={activeTech.icon}
+                  alt={activeTech.name}
+                  className='w-full h-full object-contain'
+                />
+              </div>
+              <div className='min-w-0 flex-1'>
+                <div className='flex items-center justify-between gap-2 mb-1'>
+                  <h5 className='text-white font-bold text-base tracking-tight truncate'>
+                    {activeTech.name}
+                  </h5>
+                  <span className='text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-white/10 text-neutral-300 border border-white/10'>
+                    Active Focus
+                  </span>
+                </div>
+                <p className='text-xs text-neutral-400 leading-relaxed'>
+                  {techDescriptions[activeTech.name] || "Enterprise core technology stack component."}
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Interactive Technology Selector Grid */}
           <div className='lg:col-span-7 flex flex-col gap-3'>
-            <span className='text-xs font-mono uppercase tracking-wider text-neutral-400'>
-              Select Stack Component:
-            </span>
+            <div className='flex items-center justify-between'>
+              <span className='text-xs font-mono uppercase tracking-wider text-neutral-400'>
+                Select Stack Component:
+              </span>
+              <span className='text-[11px] font-mono text-neutral-500'>
+                {technologies.length} Technologies
+              </span>
+            </div>
 
-            <div className='grid grid-cols-2 sm:grid-cols-3 gap-2.5'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5'>
               {technologies.map((technology) => {
                 const isSelected = activeTech.name === technology.name;
                 return (
                   <button
                     key={technology.name}
                     onClick={() => setActiveTech(technology)}
-                    className={`p-3 rounded-xl border text-left flex items-center gap-3 transition-all duration-200 cursor-pointer ${
+                    className={`p-2.5 sm:p-3 rounded-xl border text-left flex items-center gap-2.5 sm:gap-3 transition-all duration-200 cursor-pointer ${
                       isSelected
                         ? "bg-white text-black font-bold border-white shadow-[0_0_20px_rgba(255,255,255,0.2)] scale-[1.02]"
                         : "bg-black-200 text-neutral-300 border-white/10 hover:border-white/30 hover:text-white"

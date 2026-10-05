@@ -1,7 +1,7 @@
 export const textVariant = (delay) => {
   return {
     hidden: {
-      y: -50,
+      y: -20,
       opacity: 0,
     },
     show: {
@@ -9,8 +9,8 @@ export const textVariant = (delay) => {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 1.25,
-        delay: delay,
+        duration: 0.75,
+        delay: delay || 0,
       },
     },
   };
@@ -19,8 +19,8 @@ export const textVariant = (delay) => {
 export const fadeIn = (direction, type, delay, duration) => {
   return {
     hidden: {
-      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+      x: direction === "left" ? 20 : direction === "right" ? -20 : 0,
+      y: direction === "up" ? 20 : direction === "down" ? -20 : 0,
       opacity: 0,
     },
     show: {
@@ -28,9 +28,9 @@ export const fadeIn = (direction, type, delay, duration) => {
       y: 0,
       opacity: 1,
       transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
+        type: type || "tween",
+        delay: delay || 0,
+        duration: duration || 0.45,
         ease: "easeOut",
       },
     },
